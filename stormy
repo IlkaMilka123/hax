@@ -5224,7 +5224,7 @@ local chat = misc:Sector("chat", "Left")
 chat:Element("Toggle", "chat spam", nil, function(tbl)
 	if tbl.Toggle then
 		while values.misc.chat["chat spam"].Toggle do
-			game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(values.misc.chat.type.Dropdown == "не кидай" and "пж не кидай репорт(((" or "im not a cheater(((" or "333", false, "Innocent", false, true)
+			game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(values.misc.chat.type.Dropdown == "standard" and "пж не кидай репорт(((" or "im not a cheater(((", false, "Innocent", false, true)
 			wait(values.misc.chat["speed (ms)"].Slider/1000)
 		end
 	end
